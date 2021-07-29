@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>what is going on?</title>
+</head>
+<body>
+    <input type="text" class="input1" />
+    
+    <button onclick="makingStar();">check</button>
+    <button onclick="clear();">clear</button>
+    <div id ="result"></div>
+    <script>
+        function makingStar(){
+            const input1 = document.querySelector('.input1').value;
+            let result =""
+
+            for(let i = 0; i < input1; i++){
+                let star = "";
+                let space = "";
+                for(let k =input1-1 ; k >i ;k--){
+                    space += "&nbsp";
+                }
+                for(let j = 0; j< 2*i-1; j++){
+                    star += "*";
+                }
+                document.querySelector("#result").innerHTML+= `<div class= "dom">${space}${star}</div>`; 
+
+            }
+        };
+
+        function clear(){
+            const clearElement = document.getElementsByClassName('dom');
+            clearElement.innerText = '';
+        }
+    </script>
+</body>
+</html>
