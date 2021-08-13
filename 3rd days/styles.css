@@ -31,17 +31,19 @@ body {
     text-align: center;
     margin-top: 50px;
 }
-.inputlist h2 {
+.inputlist h3 {
     margin-top: 0;
     margin-bottom: 10px;
+
 }
 input {
     text-align: center;
     font-family: 'Do Hyeon', cursive;
     font-weight: bold;
     font-size: 1.5rem;
-    width: 500px;
+    width: 80%;
     height: 30px;
+    margin-bottom: 10px;
 }
 button {
     font-family: 'Do Hyeon', cursive;
